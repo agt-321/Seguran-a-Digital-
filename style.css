@@ -2,10 +2,10 @@
 
 :root{
     --branco: #ffffff;
-    --cor-de-fundo: #111827;
-    --fundo-senha: #1f2937;
-    --fundo-texto: #374151;
-    --borda: #3b82f6;
+    --cor-de-fundo: #2d1b2e;
+    --fundo-senha: #9b5de5;
+    --fundo-texto: #f8f0fc;
+    --borda: #8d6b94;
     --roboto: 'Roboto', sans-serif;
     --roboto-mono: 'Roboto Mono', monospace;
 }
@@ -69,10 +69,12 @@ body{
 .parametro-titulo{
     font-family: var(--roboto-mono);
     font-size: 28px;
+    color: #2d1b2e;
 }
 
 .parametro-senha__titulo{
     font-size:24px;
+    color: #2d1b2e;
 }
 
 .parametro-coluna__senha{
@@ -80,7 +82,6 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-
 .parametro-senha{
     width: 50%;
     margin: 0 auto;
@@ -92,12 +93,18 @@ body{
 }
 
 .parametro-senha__botao{
-    background-color: var(--fundo-texto);
+    background-color: #c77dff;
     color: var(--branco);
     border: 2px solid var(--borda);
     padding: 24px;
     font-size: 24px;
     cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.parametro-senha__botao:hover {
+    background-color: #9b5de5;
 }
 
 .parametro-senha__texto{
@@ -106,85 +113,88 @@ body{
     border-bottom: 2px solid var(--borda);
     margin: 0;
     font-size: 24px;
+    color: #2d1b2e;
 }
 
 label{
     font-size: 20px;
+    color: #2d1b2e;
 }
 
 .checkbox{
     width: 20px;
     height: 20px;
     cursor: pointer;
+    accent-color: #9b5de5;
 }
 
 .barra{
-    background-color: var(--fundo-senha);
+    background-color: #c77dff;
     height: 30px;
     width: 100%;
+    border-radius: 8px;
 }
-
 .forca{
     height: 30px;
     position: relative;
     bottom: 30px;
+    border-radius: 8px;
 }
-
 .fraca{
     width: 25%;
-    background-color: #ef4444;
+    background-color: #f15bb5;
 }
-
 .media{
+    background-color: #9b5de5;
     width: 50%;
-    background-color: #f59e0b;
 }
-
 .forte{
+    background-color: #8d6b94;
     width: 100%;
-    background-color: #22c55e;
 }
 
 .parametro-senha-textos{
     display: flex;
     justify-content: space-between;
+    color: #2d1b2e;
 }
+
 
 @media screen and (min-width: 768px) {
     .parametro-coluna__senha{
         flex-direction: row;
     }
-}
-
-.footer{
-    background-color: #0f172a;
-    color: #94a3b8;
+    .footer {
+    background-color: #2d1b2e;
+    color: #c77dff;
     text-align: center;
     padding: 25px 20px;
     margin-top: 40px;
-    border-top: 1px solid #334155;
+    border-top: 1px solid #8d6b94;
     font-size: 0.9rem;
 }
 
-.footer .container{
+.footer .container {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.footer strong{
-    color: #ffffff;
+.footer strong {
+    color: #f8f0fc;
 }
 
-.footer-links{
+.footer-links {
     margin-top: 12px;
 }
 
-.footer-links a{
-    color: #60a5fa;
+.footer-links a {
+    color: #c77dff;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.footer-links a:hover{
-    color: #22c55e;
+.footer-links a:hover {
+    color: #f15bb5;
+}
+    
 }
